@@ -31,7 +31,7 @@ function sortPeople(people, sortByProperty) {
 			return MapSorter.prototype.sort(people, (x, y) => { return (x ? x["age"] : null) > (y ? y["age"] : null); });
 		break;
 		case "name":
-			return MapSorter.prototype.sort(people, (x, y) => {console.log(x,y); return (x ? x["name"] : null) > (y ? y["name"] : null); });
+			return MapSorter.prototype.sort(people, (x, y) => { return (x ? x["name"] : null) > (y ? y["name"] : null); });
 		break;
 		default:
 			return MapSorter.prototype.sort(people, (x, y) => { return x > y; });
